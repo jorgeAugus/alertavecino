@@ -5,7 +5,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/alertavecino/', // <-- INSERTA ESTA LÍNEA EXACTAMENTE AQUÍ
+    base: '/alertavecino/'
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
