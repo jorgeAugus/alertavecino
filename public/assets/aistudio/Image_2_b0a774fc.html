@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>AlertaVecino</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface-variant": "#444651", "surface-dim": "#d3daef", "on-primary": "#ffffff", "background": "#f9f9ff", "on-secondary-fixed": "#25005a", "on-tertiary-fixed-variant": "#93000b", "surface-bright": "#f9f9ff", "primary-fixed": "#dce1ff", "on-error-container": "#93000a", "outline": "#757682", "secondary-container": "#8a4cfc", "inverse-on-surface": "#edf0ff", "surface": "#f9f9ff", "tertiary-fixed": "#ffdad6", "on-error": "#ffffff", "tertiary-container": "#87000a", "primary-fixed-dim": "#b6c4ff", "surface-container-highest": "#dce2f7", "on-primary-container": "#90a8ff", "on-secondary": "#ffffff", "secondary-fixed-dim": "#d2bbff", "outline-variant": "#c5c5d3", "surface-variant": "#dce2f7", "on-tertiary-fixed": "#410002", "on-background": "#141b2b", "secondary": "#712ae2", "tertiary": "#5d0004", "secondary-fixed": "#eaddff", "on-secondary-container": "#fffbff", "primary": "#00236f", "on-secondary-fixed-variant": "#5a00c6", "surface-container": "#e9edff", "inverse-surface": "#293040", "on-primary-fixed-variant": "#264191", "surface-container-lowest": "#ffffff", "primary-container": "#1e3a8a", "error-container": "#ffdad6", "surface-tint": "#4059aa", "on-surface": "#141b2b", "on-tertiary-container": "#ff8b80", "on-primary-fixed": "#00164e", "tertiary-fixed-dim": "#ffb4ab", "on-tertiary": "#ffffff", "surface-container-high": "#e1e8fd", "error": "#ba1a1a", "inverse-primary": "#b6c4ff", "surface-container-low": "#f1f3ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "1rem", "gutter": "1rem", "space-md": "0.75rem", "margin-tablet": "2rem", "margin": "1rem", "space-sm": "0.5rem", "space-xl": "1.5rem", "space-xs": "0.25rem", "gutter-tablet": "1.5rem", "margin-desktop": "3rem" }, fontFamily: { "body-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "body-sm": ["Inter"], "label-lg": ["Inter"], "label-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Inter"] }, fontSize: { "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "headline-lg": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "700" }], "display-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "800" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "500" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "headline-md": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "display-lg": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "800" }], "headline-sm": ["16px", { lineHeight: "24px", fontWeight: "600" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen selection:bg-secondary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="AlertaVecino Logo Escudo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1UiyA7DNffmrXe55-fr2T3m1wC2yM82FMf5smSzhp4yDiuxjA7MUwlT9Do_Ts50oz5PoozjqWCVnY7TBptBjUcNDh0d5f7IpBEpe0sOGZZqCRVUdkKNSjl1-Jw7-vpCTG_Lec0vINKmIvE5AKQov02b7s6wCNfh2CaCnTMFs5ajDQs0QyC2SJUxoTOnMprIhaBQhEtVLNMVwf0wmBvsoC9xgMYeRyOhsL5gXEqboIpctSOHsy75e503KRKN"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-1.5"><span class="font-headline-sm text-headline-sm text-primary tracking-tight truncate leading-tight">AlertaVecino</span><span class="px-1.5 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-[10px] tracking-wide uppercase font-bold shrink-0">Municipal</span></div><span class="font-label-sm text-label-sm text-on-surface-variant font-medium truncate">Reportar</span></div></div><div class="flex items-center gap-2 shrink-0"><div class="flex flex-col items-end"><span class="flex items-center gap-1 font-label-sm text-[10px] text-on-surface-variant font-semibold leading-none"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>Conectada</span><span class="font-label-sm text-[9px] text-outline leading-tight">Serenazgo 24/7</span></div><div class="relative flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-emerald-500/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpiRuAHfYGkF5sGJytzxTuR0ZXrFRiB3YEl91ig2W-86o8oPKZISTdoQ6s2v2aoHXeUhZweuCgWWdpqW6HwWf6uRUrTjpixr9RXmxQUvVkltY5Wy-AMds5sn8KQLRrWZVavbKmlTEJHmsHjEGd0AfSj-ZKlhQ4lO-j3L6O_UrFKjWHZAnTa6xaSTkiBCcxDbcDs3fw3AV9JLS6SKCbl7fXYuY4-ffL8U2ZdUj5gHZx65DDMD0OGLkR4g"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-emerald-500 rounded-full border-2 border-surface"></span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full">
+<div class="px-gutter pt-space-md pb-space-lg flex flex-col gap-space-lg">
+<!-- Subheader / Context Bar -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">broadcast_on_home</span>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Canal Directo de Alerta</h1>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          Reporte de seguridad inmediata para comercios y vecinos en red
+        </p>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 bg-surface-container rounded-full shrink-0">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+<span class="font-label-sm text-[10px] text-primary font-bold tracking-wider uppercase">Enlace Activo</span>
+</div>
+</div>
+<!-- Dispatch Mode Selector (Civic vs Confidential) -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Modo de Despacho</span>
+<div class="grid grid-cols-1 gap-2.5" id="dispatch-group">
+<!-- Option A (Default Selected) -->
+<label class="cursor-pointer relative flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-lowest shadow-sm transition-all duration-200" id="mode-community-label">
+<input checked="" class="mt-1 w-4 h-4 text-primary accent-primary shrink-0" name="dispatch_mode" onchange="toggleDispatchMode('community')" type="radio" value="community"/>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-1.5">
+                Compartir con la Red de Vecinos
+                <span class="px-1.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[10px] font-bold">Recomendado</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Notificación simultánea a bodegas, comercios del cuadrante y base de Serenazgo.
+            </p>
+</div>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">hub</span>
+</div>
+</label>
+<!-- Option B (Confidential / Extortion Shield) -->
+<label class="cursor-pointer relative flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-lowest shadow-sm transition-all duration-200 opacity-90" id="mode-confidential-label">
+<input class="mt-1 w-4 h-4 text-primary accent-primary shrink-0" name="dispatch_mode" onchange="toggleDispatchMode('confidential')" type="radio" value="confidential"/>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-1.5">
+                Enviar Solo a Serenazgo
+                <span class="px-1.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-[10px] font-bold">Confidencial</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Canal blindado y encriptado. Máxima discreción contra cobro de cupos y represalias.
+            </p>
+</div>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-error shrink-0">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Threat / Crime Category Selection -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Tipo de Amenaza o Incidente</label>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Prioridad Alta</span>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-error-container/40">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-7 h-7 rounded-md bg-error flex items-center justify-center text-on-error shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-bold truncate">Intimidación / Extorsión (Cobro de cupos)</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px] shrink-0">expand_more</span>
+</div>
+<!-- Quick Tag Chips -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 -mx-0.5 px-0.5">
+<button class="shrink-0 px-3 py-1.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[14px]">store</span>
+            Robo a Comercio
+          </button>
+<button class="shrink-0 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">visibility</span>
+            Sospechoso en Zona
+          </button>
+<button class="shrink-0 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">two_wheeler</span>
+            Moto sin Placa
+          </button>
+</div>
+</div>
+</div>
+<!-- Live Telemetry Mini-Map Card -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Geolocalización en Tiempo Real</label>
+<span class="flex items-center gap-1 text-[11px] font-label-sm text-emerald-700 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>GPS Preciso ±3m
+        </span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-3.5 shadow-sm flex flex-col gap-3">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">storefront</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface font-bold truncate">Bodega Doña Rosa — Cuadrante 3B</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Av. Las Artes Norte 412, San Borja, Lima</span>
+</div>
+</div>
+<!-- Stylized Map Frame with Radius Overlay and Patrol Markers -->
+<div class="relative w-full h-36 rounded-lg overflow-hidden bg-surface-container" data-location="Av. Las Artes Norte 412, San Borja, Lima" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBuGqrXDT3IsW1eWAJkGMbSypvpWeyFX8X_-H2ZxxmWTsCjK2fQhLNeSvltDgSS_8en3d--EhV1YZf-gfytyD8SSwU2ZNPBNT4fTtKJ1flsDOkU1eaaNytknoIJq7mJCV4Tq2GPUIm37nwvYiFU1BWDnaHM-1FBFbEVQZmzo1De_uCRMSRIJelpi5KedyQiQpSRQWksyZaW6Oau9q4_zm5yqoIHYU3v86yzQvyGF3vdhgzLem8wxE-OeQ')">
+<!-- Translucent Radar Pulse Center -->
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[1px] flex items-center justify-center">
+<!-- Alert Coverage Radius Ring (300m) -->
+<div class="relative w-28 h-28 rounded-full bg-secondary/15 flex items-center justify-center">
+<div class="w-20 h-20 rounded-full bg-secondary/25 animate-ping opacity-60"></div>
+<!-- User Pin Point -->
+<div class="absolute w-7 h-7 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-lg ring-2 ring-surface">
+<span class="material-symbols-outlined text-[15px]">store</span>
+</div>
+</div>
+<!-- Nearby Serenazgo Patrol Marker (#14) -->
+<div class="absolute top-4 right-8 flex items-center gap-1 bg-surface/95 px-2 py-0.5 rounded-full shadow-md">
+<span class="material-symbols-outlined text-primary text-[14px]">local_police</span>
+<span class="font-label-sm text-[10px] font-bold text-primary">Móvil 14 (Serenazgo)</span>
+</div>
+<!-- Radio Range Pill -->
+<div class="absolute bottom-2.5 left-2.5 bg-surface/90 px-2 py-0.5 rounded-md backdrop-blur-sm shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-secondary">wifi_tethering</span>
+<span class="font-label-sm text-[10px] text-on-surface font-medium">Cobertura alerta: Radio 300m</span>
+</div>
+<!-- Nearby Count Pill -->
+<div class="absolute bottom-2.5 right-2.5 bg-surface/90 px-2 py-0.5 rounded-md backdrop-blur-sm shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-emerald-600">store</span>
+<span class="font-label-sm text-[10px] text-on-surface font-semibold">18 comercios conectados</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Evidence Upload (Discreet Audio / Photo) -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Evidencia Opcional Rápida</label>
+<div class="grid grid-cols-2 gap-2.5">
+<button class="flex items-center gap-2 p-3 rounded-xl bg-surface-container-lowest shadow-sm active:bg-surface-container transition-colors text-left" type="button">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold">Captura Rápida</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant truncate">Foto o video corto</span>
+</div>
+</button>
+<button class="flex items-center gap-2 p-3 rounded-xl bg-surface-container-lowest shadow-sm active:bg-surface-container transition-colors text-left" type="button">
+<div class="w-9 h-9 rounded-lg bg-error-container/50 flex items-center justify-center text-error shrink-0">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold">Audio Discreto</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant truncate">Grabar 15 seg</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Cashless Protection Feature (Micro-Banner) -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-primary to-primary-container p-4 shadow-sm text-on-primary">
+<div class="relative z-10 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]" style="font-variation-settings: 'FILL' 1;">security</span>
+<span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-primary">Plataforma de Cobro Seguro</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-[10px] font-bold">Anti-Extorsión</span>
+</div>
+<p class="font-body-sm text-body-sm text-surface-container-high leading-snug">
+          Reduce el manejo de efectivo en caja para minimizar riesgo de robo en tu bodega. Activa cobro QR interoperable sin comisiones para clientes verificados.
+        </p>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-secondary-fixed font-bold hover:underline pt-1" href="#">
+          Vincular Yape / Plin Seguro
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Subtle Decorative Brand Accents -->
+<div class="absolute -right-6 -bottom-6 w-28 h-28 rounded-full bg-secondary/20 blur-xl pointer-events-none"></div>
+<div class="absolute right-3 top-3 opacity-15 pointer-events-none">
+<span class="material-symbols-outlined text-[64px]">qr_code_scanner</span>
+</div>
+</div>
+<!-- Dispatch Action Section -->
+<div class="pt-space-xs flex flex-col gap-2">
+<button class="w-full h-14 rounded-xl bg-secondary text-on-secondary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2.5 shadow-lg shadow-secondary/30 active:scale-[0.98] transition-all" id="dispatch-btn" type="button">
+<span class="material-symbols-outlined text-[22px]">send</span>
+<span>Despachar Alerta Inmediata</span>
+</button>
+<!-- Real-time Municipal Response Indicator -->
+<div class="flex items-center justify-center gap-1.5 py-1 text-center">
+<span class="material-symbols-outlined text-error text-[16px]">timer</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">
+          Tiempo de respuesta estimado Serenazgo: <span class="font-bold text-on-surface">3 min</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function toggleDispatchMode(mode) {
+    const communityCard = document.getElementById('mode-community-label');
+    const confidentialCard = document.getElementById('mode-confidential-label');
+    const dispatchBtn = document.getElementById('dispatch-btn');
+
+    if (mode === 'confidential') {
+      confidentialCard.classList.remove('opacity-90');
+      confidentialCard.classList.add('shadow-md');
+      communityCard.classList.add('opacity-90');
+      communityCard.classList.remove('shadow-md');
+      if (dispatchBtn) {
+        dispatchBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[22px]">lock</span>
+          <span>Despachar Alerta Confidencial</span>
+        `;
+      }
+    } else {
+      communityCard.classList.remove('opacity-90');
+      communityCard.classList.add('shadow-md');
+      confidentialCard.classList.add('opacity-90');
+      confidentialCard.classList.remove('shadow-md');
+      if (dispatchBtn) {
+        dispatchBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[22px]">send</span>
+          <span>Despachar Alerta Inmediata</span>
+        `;
+      }
+    }
+  }
+
+  // Interactive feedback for Dispatch Button
+  document.getElementById('dispatch-btn')?.addEventListener('click', function() {
+    const originalText = this.innerHTML;
+    this.disabled = true;
+    this.classList.add('opacity-75');
+    this.innerHTML = `
+      <span class="w-4 h-4 border-2 border-on-secondary border-t-transparent rounded-full animate-spin"></span>
+      <span>Conectando con Centro de Operaciones...</span>
+    `;
+
+    setTimeout(() => {
+      this.classList.remove('bg-secondary', 'opacity-75');
+      this.classList.add('bg-emerald-600');
+      this.innerHTML = `
+        <span class="material-symbols-outlined text-[22px]">check_circle</span>
+        <span>¡Alerta Transmitida a Cuadrante 3B!</span>
+      `;
+      setTimeout(() => {
+        this.classList.remove('bg-emerald-600');
+        this.classList.add('bg-secondary');
+        this.innerHTML = originalText;
+        this.disabled = false;
+      }, 3500);
+    }, 1200);
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-secondary"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center w-16 h-12 text-on-surface-variant transition-colors" data-path="inicio" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-[11px] mt-0.5">Inicio</span></a><a class="flex flex-col items-center justify-center w-16 h-12 text-on-surface-variant transition-colors" data-path="mapa-alertas" href="#"><span class="material-symbols-outlined text-[22px]">location_on</span><span class="font-label-sm text-[11px] mt-0.5">Mapa</span></a><a aria-current="page" class="flex flex-col items-center justify-center w-16 h-12 transition-colors text-secondary" data-path="reportar" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">shield</span><span class="absolute -top-1 -right-1 w-2 h-2 bg-error rounded-full"></span></div><span class="font-label-sm text-[11px] mt-0.5">Reportar</span></a><a class="flex flex-col items-center justify-center w-16 h-12 text-on-surface-variant transition-colors" data-path="soporte-24-7" href="#"><span class="material-symbols-outlined text-[22px]">headset_mic</span><span class="font-label-sm text-[11px] mt-0.5">Soporte</span></a></div></nav></body></html>

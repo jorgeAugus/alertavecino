@@ -1,0 +1,6 @@
+{
+  "name": "AlertaVecino Municipal",
+  "description": "Sistema municipal de alerta comunitaria, botón de pánico SOS y prevención de extorsión comercial y vecinal.",
+  "requestFramePermissions": ["geolocation", "microphone", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
